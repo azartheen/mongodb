@@ -1,0 +1,3 @@
+- db.<collection_name>.deleteMany({}) - Xóa tất cả Document trong Collection
+- db.<collection_name>.drop() - Drop Collection
+- db.dropDatabase() - Drop Database

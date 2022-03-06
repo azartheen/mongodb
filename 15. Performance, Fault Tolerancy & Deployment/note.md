@@ -1,0 +1,4 @@
+- Capped Collection - Collection đặc biệt có thể giới hạn số lượng Document được lưu trữ và tự động xóa Document cũ nhất để chèn Document mới nếu số lượng Document đã vượt giới hạn
+- db.createCollection("capped", {capped: true, size: 10000, max: 3}) - Tạo Capped Collection với giới hạn size là 10000 (byte) (mặc định là 4 byte) và số lượng Document tối đa là 3
+- Document trong Capped Collection mặc định luôn được sắp xếp theo thứ tự chèn
+- db.capped.find().sort({$natural: -1}) - Kết quả được sắp xếp ngược lại với thứ tự chèn trong Capped Collection
